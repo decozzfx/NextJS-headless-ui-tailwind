@@ -24,8 +24,8 @@ export default function ListboxPage(){
     const [selectedItem, setSelectedItem] = useState('')
     return(
         <div className="flex items-center justify-center h-screen">
-            <Listbox as='div' className='relative' onChange={(value) => setSelectedItem(value)}>
-                <Listbox.Button className='flex items-center border border-gray-500 rounded px-4 py-2 hover:bg-blue-400'>
+            <Listbox as='div' className='relative' onChange={setSelectedItem}>
+                <Listbox.Button className='flex items-center  border border-gray-500 rounded px-4 py-2 hover:bg-blue-400'>
                 {selectedItem === '' ? 'Choose Country' : `${selectedItem}`} 
                 <div className="flex">
                     <img src="/chevron-down.svg" className="ml-3 bg-indigo-600"/>
