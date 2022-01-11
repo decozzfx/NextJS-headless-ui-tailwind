@@ -10,8 +10,8 @@ export default function MyToggle() {
          checked={enabled}
          onChange={setEnabled}
          className={`${
-         enabled ? 'bg-blue-600' : 'bg-gray-200'
-         } relative inline-flex items-center h-6 rounded-full w-11`}
+         enabled ? 'bg-blue-600' : 'bg-red-300'
+         } relative inline-flex items-center h-6 rounded-full w-11 transition-all duration-500`}
       >
          <span
          className={`${
